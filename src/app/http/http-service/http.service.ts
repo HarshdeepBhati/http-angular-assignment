@@ -9,8 +9,8 @@ export class HttpService {
 
   constructor(private http: HttpClient) { }
   apiUrl = 'https://jsonplaceholder.typicode.com/photos';
-  firstImgUrl = "null";
-  secondImgUrl = "null";
+  firstImgUrl = "";
+  secondImgUrl = "";
   titleImg = '';
   resPost:any;
   resGet:any;
