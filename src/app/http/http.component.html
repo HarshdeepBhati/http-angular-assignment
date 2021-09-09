@@ -1,0 +1,21 @@
+<div class="container bg-light border rounded">
+    <h1 class="text-muted">Angular HTTP Assignment</h1>
+    <form [formGroup]="user">
+        <div class="form-group">
+            <label for="fieldTitle">Image Title</label>
+            <input type="text" class="form-control" id="fieldTitle" formControlName="fieldTitle"
+                placeholder="Enter Title">
+        </div>
+        <label class="form-label" for="customFile">Upload First Image</label>
+        <input type="file" (change)="convertFile($event)" class="form-control" id="customFile" />
+        <label class="form-label" for="customFile">Upload Second Image</label>
+        <input type="file" (change)="convertFile2($event)" class="form-control" id="customFile" />
+
+    </form>
+    <div class="container my-4">
+        <button class="btn btn-primary" type="submit" (click)="onSubmit()">
+            Submit
+        </button>
+    </div>
+    
+</div>

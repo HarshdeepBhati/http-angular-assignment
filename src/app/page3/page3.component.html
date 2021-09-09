@@ -1,0 +1,11 @@
+<div class="container">
+  <h1 class="text-center text-muted">{{ titleImg }}</h1>
+  <div class="container d-flex justify-content-center border rounded">
+    <div class="border">
+      <img style="width: 600px" alt="Image-1" [src]="firstImage" *ngIf="firstImage">
+    </div>
+    <div class="border">
+      <img style="width: 600px" alt="Image-2" [src]="secondImage" *ngIf="secondImage">
+    </div>
+  </div>
+</div>
